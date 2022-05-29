@@ -17,3 +17,13 @@ Aplikasi berbasis Website “Local Pride Store” yang bisa diakses menggunakan 
 Kenapa kami menggunakan IP? Kami sedikit ada kendala pada bag deployment yang dimana harusnya me-dump dari github langsung ke domain akan tetapi kami lupa pada saat itu dan akhirnya kami bikin manual di folder public nya.
 Apakah Aman dengan ip tersebut? Kami rasa aman karena mungkin tidak terlalu perlu untuk security yang hold dan untuk ip tersebut adalah menggunakan ip public dari sub domain yang telah kami  rancang.
 
+## Cara Menjalankan Program ini di Local
+1. git clone (url_github)
+2. composer install / untuk menginstall semua depedency
+3. cp .env.example .env / untuk mengcopy file .env example ke .env
+4. php artisan key:generate / untuk me-generate key yang ada di .env
+5. buat database di mysql
+6. edit name databasenya di env sesuai di mysqlnya
+7. php artisan migrate --seed / untuk meinport semua table datbase dan kawan kawanya secara otomatis
+8. php artisan serve / untuk menjalankan live servernya
+
